@@ -75,7 +75,7 @@
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
-        height: 109vh;
+        height: 725px;
         position: relative;    
     }
     
@@ -85,7 +85,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 109vh;
+        height: 725px;
         background-color: rgba(1, 1, 1, 0.70); /* Define a cor e a opacidade da sobreposição */
         padding: 0px 0px 0px 0px;
     }
@@ -136,7 +136,7 @@
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
-        height: 100vh;
+        height: 675px;
         position: relative;    
     }
     
@@ -146,7 +146,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 675px;
         background-color: rgba(1, 1, 1, 0.70); /* Define a cor e a opacidade da sobreposição */
         padding: 0px 0px 0px 0px;
     }
@@ -154,8 +154,7 @@
     .divPrimary {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 3;
-        height: auto;    
+        grid-template-rows: 3;            
         margin: 40px 20px 60px 20px;
         grid-gap: 30px 0px;
     }

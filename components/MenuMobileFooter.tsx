@@ -1,9 +1,28 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "../src/styles/menuMobileFooter.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function MenuMobile() {
+
+    const router = useRouter(); // Inicialize o useRouter
+
+    useEffect(() => {
+    // Função para fechar o menu mobile ao mudar de rota
+    const handleRouteChange = () => {
+      setVisible(false);
+    };
+
+    // Adicione o event listener para monitorar as mudanças de rota
+    router.events.on("routeChangeStart", handleRouteChange);
+
+    // Remova o event listener quando o componente for desmontado
+    return () => {
+        router.events.off("routeChangeStart", handleRouteChange);
+        };
+    }, [router]);
+    
     const [fill, setFill] = useState('#999999');
 
     const handleMouseOver = () => {
