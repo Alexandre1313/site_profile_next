@@ -3,7 +3,8 @@
     align-items: flex-start;
     justify-content: center;    
     min-height: 100vh;
-    padding: 0px 17px 50px 17px;    
+    padding: 0px 17px 50px 17px;  
+    -webkit-tap-highlight-color: transparent;   
 }
 
 .divGridTwo {

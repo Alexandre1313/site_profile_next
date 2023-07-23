@@ -23,24 +23,24 @@ export default function MenuMobile() {
         };
     }, [router]);
     
-    const [fill, setFill] = useState('#999999');
+    const [fill, setFill] = useState('#15803d');
 
     const handleMouseOver = () => {
-        setFill('#ffffff');
+        setFill('#191c20');
     };
 
     const handleMouseOut = () => {
-        setFill('#999999');
+        setFill('#15803d');
     };
 
-    const [fillc, setFillc] = useState('#999999');
+    const [fillc, setFillc] = useState('#fb913c');
 
     const handleMouseOverc = () => {
-        setFillc('#ffffff');
+        setFillc('#191c20');
     };
 
     const handleMouseOutc = () => {
-        setFillc('#999999');
+        setFillc('#fb923c');
     };
 
     const [isVisible, setVisible] = useState(false)

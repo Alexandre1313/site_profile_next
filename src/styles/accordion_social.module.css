@@ -12,7 +12,8 @@
     margin-bottom: 10px;
     cursor: pointer;    
     box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.35); 
-    background: #1d1f23;    
+    background: #1d1f23; 
+    -webkit-tap-highlight-color: transparent;    
   }    
 
   .section:hover {

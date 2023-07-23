@@ -141,7 +141,7 @@ const Accordion_Social = () => {
                 >
                     <div className={styles.sectionContent}>
                         <Image className={''}
-                            src={`/images/instagram.png`}
+                            src={`/images/instagran.png`}
                             alt={`Ícone do instagram`}
                             width={100}
                             height={100}
