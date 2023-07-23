@@ -120,7 +120,7 @@ const Accordion_Social = () => {
                         whileHover={`variantB`}
                     >
                         <Image className={`${styles.icon} ${activeIndex === 1 ? '' : styles.active1}`}
-                            src={`/images/instagram.png`}
+                            src={`/images/instagran.png`}
                             alt={`Ícone do instagram`}
                             width={30}
                             height={30}
