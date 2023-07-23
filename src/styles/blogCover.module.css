@@ -1,0 +1,88 @@
+.block {
+    min-height: 80px;
+}
+
+.divMaster {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    height: 70vh; 
+    align-items: center;
+    justify-content: center;
+    padding: 130px 15px 50px 15px;    
+    background-image: url('../../public/images/imagem_capa_blog.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divMaster::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor e a opacidade da sobreposição */
+    padding: 130px 0px 0px 0px;
+}
+
+.blogTitle {
+    font-size: 72px;
+    font-weight: 700;
+    z-index: 3;
+    color: #ffffff;
+}
+
+.blogComplement {
+    font-size: 35px;
+    font-weight: 400;
+    z-index: 3;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1023px) {
+    .divMaster {        
+        height: 70vh; 
+        justify-content: start;                       
+    }
+    .blogTitle {
+        padding: 30px 0px 0px 0px;
+        font-size: 55px;
+        text-align: center;
+        font-weight: 700;
+        z-index: 3;        
+    }
+    
+    .blogComplement {
+        font-size: 27px;
+        text-align: center;
+        font-weight: 400;
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .divMaster {        
+        height: 70vh; 
+        justify-content: start;                       
+    }
+    .blogTitle {
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        z-index: 3;        
+    }
+    
+    .blogComplement {
+        font-size: 22px;
+        text-align: center;
+        font-weight: 400;
+        z-index: 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

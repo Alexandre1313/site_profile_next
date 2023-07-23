@@ -1,0 +1,180 @@
+.divMaster {
+    display: flex;
+    flex-direction: column;
+    z-index: 13;
+    align-items: center; 
+    justify-content: center;  
+    gap: 15px;      
+} 
+
+.divRadius {
+    display: flex;
+    align-items: center; 
+    justify-content: center;      
+    width: auto;
+    height: auto;
+    border-radius: 89px;
+    overflow: hidden;
+}
+
+.divImage {
+    display: flex;
+    padding: 10px;
+    align-items: center; 
+    justify-content: center;      
+    width: auto;
+    height: auto;
+    background: rgba(29, 31, 35, 0.0);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #15803d, #fb913c) 1;
+    animation: borderAnimation 9s linear infinite;   
+}
+
+@keyframes borderAnimation {
+    0%, 100% {
+      border-image: conic-gradient(red, blue, #15803d, red) 1; /* Gradiente circular com as cores desejadas */
+    }
+    50% {
+      border-image: conic-gradient(blue, green, red, blue) 1; /* Gradiente circular com as cores desejadas */
+    }
+  }
+                
+.imageE {
+
+}
+                
+.divTitle {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: rgba(29, 31, 35, 0.0); 
+    padding: 0px 20px 5px 20px;
+    border-radius: 9px;
+}
+
+.titleE {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1023px) {
+    .divMaster {
+        display: flex;
+        flex-direction: column;
+        z-index: 13;
+        align-items: center; 
+        justify-content: center;  
+        gap: 10px;      
+    } 
+    
+    .divRadius {
+        display: flex;
+        align-items: center; 
+        justify-content: center;      
+        width: auto;
+        height: auto;
+        border-radius: 89px;
+        overflow: hidden;
+    }
+    
+    .divImage {
+        display: flex;
+        padding: 10px;
+        align-items: center; 
+        justify-content: center;      
+        width: auto;
+        height: auto;
+        background: rgba(29, 31, 35, 0.0);
+        border: 1px solid;
+        border-image: linear-gradient(45deg, #15803d, #fb913c) 1;
+        animation: borderAnimation 9s linear infinite;   
+    }
+    
+    @keyframes borderAnimation {
+        0%, 100% {
+          border-image: conic-gradient(red, blue, #15803d, red) 1; /* Gradiente circular com as cores desejadas */
+        }
+        50% {
+          border-image: conic-gradient(blue, green, red, blue) 1; /* Gradiente circular com as cores desejadas */
+        }
+      }
+                    
+    .imageE {
+    
+    }
+                    
+    .divTitle {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        background: rgba(29, 31, 35, 0.0); 
+        padding: 0px 20px 5px 20px;
+        border-radius: 9px;
+    }
+    
+    .titleE {
+        font-size: 19px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .divMaster {
+        display: flex;
+        flex-direction: column;
+        z-index: 13;
+        align-items: center; 
+        justify-content: center;  
+        gap: 10px;      
+    } 
+    
+    .divRadius {
+        display: flex;
+        align-items: center; 
+        justify-content: center;      
+        width: auto;
+        height: auto;
+        border-radius: 89px;
+        overflow: hidden;
+    }
+    
+    .divImage {
+        display: flex;
+        padding: 10px;
+        align-items: center; 
+        justify-content: center;      
+        width: auto;
+        height: auto;
+        background: rgba(29, 31, 35, 0.0);
+        border: 1px solid;
+        border-image: linear-gradient(45deg, #15803d, #fb913c) 1;
+        animation: borderAnimation 9s linear infinite;   
+    }
+    
+    @keyframes borderAnimation {
+        0%, 100% {
+          border-image: conic-gradient(red, blue, #15803d, red) 1; /* Gradiente circular com as cores desejadas */
+        }
+        50% {
+          border-image: conic-gradient(blue, green, red, blue) 1; /* Gradiente circular com as cores desejadas */
+        }
+      }
+                    
+    .imageE {
+    
+    }
+                    
+    .divTitle {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        background: rgba(29, 31, 35, 0.0); 
+        padding: 0px 20px 5px 20px;
+        border-radius: 9px;
+    }
+    
+    .titleE {
+        font-size: 17px;
+        font-weight: 100;
+    }
+}

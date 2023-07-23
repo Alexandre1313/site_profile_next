@@ -1,0 +1,150 @@
+.accordion {
+    width: 100%;
+  }
+  
+  .section {
+    border: 1px solid rgba(21,128,61,0.1);        
+    border-radius: 34px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #1d1f23; 
+  }  
+
+  .section:hover {
+    border: 1px solid rgba(21,128,61,0.2);              
+  }
+  
+  .sectionTitle {
+    color: #ffffff;
+    padding: 10px;    
+    margin: 0;    
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px;
+  }
+
+  .sectionTitle:hover {
+    background: rgba(21,128,61,0.1); 
+    color: #ffffff; 
+  }  
+
+  .sectionTitleOpen {
+    color: #ffffff;
+    padding: 10px;    
+    margin: 0;    
+    font-weight: bold;
+    background: rgba(21,128,61,0.1); 
+    text-align: center;
+    border-radius: 34px;
+  }
+  
+  .sectionContent {    
+    padding: 10px;     
+    background-color: #191c20; 
+    align-items: center;
+    justify-content: center;   
+    display: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sectionContent::before {
+    content: ""; /* Adiciona um conteúdo vazio ao pseudoelemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px 34px 34px 34px;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor da sobreposição */
+    pointer-events: none; /* Permite que o conteúdo subjacente da .sectionContent seja clicável */
+  }
+
+  .section.active .sectionContent {
+    display: flex; 
+    flex-direction: column;  
+    background: #1d1f23;  
+    padding: 30px 0px 30px 0px;
+    border-radius: 0px 0px 34px 34px;
+  }
+
+  .adorno {
+    color: #15803d;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 0px 5px 0px 5px;
+}
+
+.adorno:hover {
+    color: #fb923c;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 660px) {
+  .section {
+    border: 1px solid rgba(21,128,61,0.1);        
+    border-radius: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #1d1f23; 
+  }  
+
+  .section:hover {
+    border: 1px solid rgba(21,128,61,0.2);              
+  }
+  
+  .sectionTitle {
+    color: #ffffff;
+    padding: 10px;    
+    margin: 0;    
+    font-weight: bold;
+    text-align: center;
+    border-radius: 14px;
+  }
+
+  .sectionTitle:hover {
+    background: rgba(21,128,61,0.5); 
+    color: #ffffff; 
+  }  
+
+  .sectionTitleOpen {
+    color: #ffffff;
+    padding: 10px;    
+    margin: 0;    
+    font-weight: bold;
+    background: rgba(21,128,61,0.5); 
+    text-align: center;
+    border-radius: 14px;
+  }
+  .sectionContent {    
+    padding: 10px;     
+    background-color: #1d1f23; 
+    align-items: center;
+    justify-content: center;   
+    display: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sectionContent::before {
+    content: ""; /* Adiciona um conteúdo vazio ao pseudoelemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 14px 14px 14px 14px;
+    background-color: rgba(0, 0, 0, 0); /* Cor da sobreposição */
+    pointer-events: none; /* Permite que o conteúdo subjacente da .sectionContent seja clicável */
+  }
+  .section.active .sectionContent {
+    display: flex; 
+    flex-direction: column;  
+    background: #1d1f23;  
+    padding: 20px 0px 10px 0px;
+    border-radius: 0px 0px 14px 14px;
+  }
+}

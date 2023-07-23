@@ -1,0 +1,128 @@
+.divheader { 
+    display: flex;  
+    background-color: rgba(31,32,36,0.75);    
+    font-size : 1em;
+    min-height: 80px;
+    max-height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;    
+    border-bottom: 1px solid #333333;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: -150px;
+    left: 0;    
+    transition: top 0.3s ease-in-out;   
+    z-index: 50; 
+}
+
+.visible {
+    top: 0;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.image {
+
+}
+
+.nav {
+
+}
+
+.buton {
+    background: #15803d;
+    color: #ffffff;
+    padding: 0.1em 2em;
+    border-radius: 7px;
+    transition: 0.34s
+}
+
+.buton:hover {
+    background-color: #16a34a;
+    color: #000000;
+    transition: 0.34s
+}
+
+.list {
+    display: flex;
+    gap: 25px;
+}
+
+.adorno {
+    color: #fb923c;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.34s
+}
+
+.adorno:hover {
+    color: #15803d;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.34s
+}
+
+.listitem {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 5px 0px;
+    border-bottom: 2px solid transparent;
+    transition: 0.34s
+}
+
+.listitem:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #16a34a;
+    transition: 0.34s
+}
+
+.listlink:hover {
+    text-decoration: none;    
+}
+
+/*Media Query para dispositivos móveis(aparecer neles)*/
+
+@media(max-width: 768px){
+    .divMenuMobile {
+        display: flex;
+    }
+    .buttonMenu {
+        padding-bottom: 6px;
+    }
+    .divbuton {
+        display: none;
+    }
+    .divnav {
+        display: none;
+    }
+    .buttonClose {
+        display: none;
+    }
+    .divheader {
+        justify-content: space-between; 
+        padding-right:50px;
+        padding-left: 30px;
+    }
+}
+
+@media(min-width: 769px) {
+    .divMenuMobile {
+        display: none;
+    }
+    .buttonMenu {
+        display: none;
+    }
+    .divbuton {
+        display: flex;
+    }
+    .divnav {
+        display: flex;
+    }
+    .buttonClose {
+        display: none;
+    }    
+}

@@ -1,0 +1,26 @@
+.titleAnimated {
+    font-size: 65px;
+    font-weight: 900;
+    z-index: 1;
+    text-align: center;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1023px) {
+    .titleAnimated {
+        font-size: 40px;
+        font-weight: 900;
+        z-index: 1;
+        text-align: center;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .titleAnimated {
+        font-size: 29px;
+        font-weight: 900;
+        z-index: 1;
+        text-align: center;
+        line-height: 1.2em;
+    }
+}

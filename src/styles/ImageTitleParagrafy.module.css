@@ -1,0 +1,74 @@
+.divOutside {
+    background-color: hsl(0deg 0% 100% / 2%);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 300px;    
+    margin: 0px;        
+    padding: 24px;
+    border: 1px solid  #333333;
+    flex-shrink: 1;
+    border-radius: 9px;
+    overflow-y: hiddenn;
+    transition-property: border-color,background;
+    transition-duration: .45s;
+}
+
+.divOutside:hover {
+    background-color: hsl(0deg 0% 100% / 2%);
+    border: 1px solid rgba(21,128,61, 1);
+    overflow-y: hiddenn;
+    box-shadow: inset 1px 1px 19px rgba(21,128,61,0.5);
+}
+
+.imageCard {
+    border-radius: 5px;
+}
+
+.divInside {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    overflow-y: hiddenn;
+    flex-grow: 1;
+    gap: 20px;      
+}
+
+.wrappedDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: hiddenn;
+    gap: 15px;
+}
+
+.titleComponent {    
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.paragrafyComponent {    
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    color: #94a1b2;
+    text-align: justify;
+}
+
+.buton {
+    background-color: #15803d;
+    color: #ffffff;
+    padding: 0.1em 2em;
+    border-radius: 7px;  
+        
+}
+
+.buton:hover {
+    background-color: #16a34a;
+    color: #000000;
+    transition-duration: .45s;
+}

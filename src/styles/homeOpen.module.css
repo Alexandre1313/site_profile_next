@@ -1,0 +1,183 @@
+.block {
+    min-height: 80px;
+}
+.divMaster {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    background-image: url('../../public/images/fundo_home_one.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 95vh;
+    position: relative;    
+}
+
+.divMaster::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-color: rgba(1, 1, 1, 0.70); /* Define a cor e a opacidade da sobreposição */
+    padding: 0px 0px 0px 0px;
+}
+
+.divPrimary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    height: auto;    
+    margin: 70px 40px 0px 40px;
+    grid-gap: 150px 0px; 
+    align-items: center; 
+    justify-content: center;     
+}
+
+.divSecondary {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-content: center;      
+}
+
+.divThird {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divTitlesAnimated {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1023px) {
+    .block {
+        min-height: 80px;
+    }
+    .divMaster {
+        display: flex;
+        align-items: flex-start; 
+        justify-content: center;
+        background-image: url('../../public/images/fundo_home_one.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 109vh;
+        position: relative;    
+    }
+    
+    .divMaster::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 109vh;
+        background-color: rgba(1, 1, 1, 0.70); /* Define a cor e a opacidade da sobreposição */
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .divPrimary {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        height: auto;    
+        margin: 50px 40px 60px 40px;
+        grid-gap: 30px 0px;
+    }
+    
+    .divSecondary {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 30px;
+        height:100%;       
+    }
+    
+    .divThird {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+        height:100%;        
+    }
+    
+    .divTitlesAnimated {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .block {
+        min-height: 80px;
+    }
+    .divMaster {
+        display: flex;
+        align-items: flex-start; 
+        justify-content: center;
+        background-image: url('../../public/images/fundo_home_one.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+        position: relative;    
+    }
+    
+    .divMaster::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(1, 1, 1, 0.70); /* Define a cor e a opacidade da sobreposição */
+        padding: 0px 0px 0px 0px;
+    }
+    
+    .divPrimary {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        height: auto;    
+        margin: 40px 20px 60px 20px;
+        grid-gap: 30px 0px;
+    }
+    
+    .divSecondary {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 30px;
+    }
+    
+    .divThird {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .divTitlesAnimated {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

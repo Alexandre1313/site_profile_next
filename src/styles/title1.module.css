@@ -1,0 +1,30 @@
+.textTitle1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+    padding-bottom:  35px;
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1023px) {
+    .textTitle1 {
+        font-size: 27px;
+        text-align: justify;
+        padding-bottom:  0px;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .textTitle1 {
+        font-size: 27px;
+        text-align: justify;
+        padding-bottom:  0px;
+        line-height: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .textTitle1 {
+
+    }
+}

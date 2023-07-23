@@ -1,0 +1,109 @@
+.accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1;
+    width: 100%;
+    grid-gap: 40px;    
+  }
+  
+  .section {
+    border: 1px solid rgba(21,128,61,0.1);        
+    border-radius: 34px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.35); 
+    background: #1d1f23;   
+  }
+
+  .section:hover {
+    border: 1px solid rgba(21,128,61,0.2);     
+    border-radius: 34px;      
+  }
+  
+  .sectionTitle {
+    display: flex;
+    border-radius: 34px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 15px;    
+    margin: 0;    
+    font-weight: bold;   
+  }
+
+  .sectionTitleOpen {
+    display: flex;
+    background: rgba(21,128,61,0.1);
+    border-radius: 34px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 15px;    
+    margin: 0;    
+    font-weight: bold; 
+  }
+
+  .sectionTitle:hover {
+    background: rgba(21,128,61,0.1); 
+    color: #ffffff; 
+  }  
+  
+  .sectionContent {    
+    padding: 20px;     
+    background-color: #191c20; 
+    align-items: center;
+    justify-content: center;   
+    display: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    border-radius: 34px;      
+  }
+
+  .section.active .sectionContent {
+    display: flex; 
+    flex-direction: column;  
+    background: #1d1f23; 
+  }
+
+.adorno {
+    color:#fb923c;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0px 5px 0px 5px;
+}
+
+.adorno:hover {
+    color: #15803d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.icon {
+  display: none;
+}
+
+.icon.active1 {
+  display: flex;
+}
+
+.sspan {
+  display: flex; 
+  align-self: flex-end; 
+}
+
+.inactive1 {
+  display: none;
+}
+
+.info {
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #94a1b2;
+}
+
+.info:hover {
+    color: #15803d;
+    transition: 0.5s;
+}
