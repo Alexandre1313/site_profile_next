@@ -3,12 +3,18 @@ import HomeGridWithBackgroundImage from '../../components/HomeGridWithBackground
 import HomeOpen from '../../components/HomeOpen'
 import SectionImage from '../../components/SectionImage'
 import SectionImageInverse from '../../components/SectionImageInverse'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home() {    
     return (
         <>  
+            <Head>
+                <title>Code JS - Falando sobre Tec</title>
+                <meta name='description' content='Um site que fala de Tecnologia, 
+                porém trata-se de um currículum online, um site que é testemunha de minhas habilidades.'/>
+            </Head>
             <HomeOpen/> 
             <SectionImage
                 urlImage={`/images/Eniac_500.jpg`}

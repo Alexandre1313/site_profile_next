@@ -1,10 +1,16 @@
 import BlogCover from "../../components/BlogCover";
 import GridThreeColumn from "../../components/GridThreeColumn";
 import ImageTitleParagrafy from "../../components/ImageTitleParagrafy";
+import Head from "next/head";
 
 export default function Blog() {
     return (
-        <>            
+        <> 
+            <Head>
+                <title>Blog - Code JS</title>
+                <meta name='description' content='Este é o blog do site Code JS, fique por dentro
+                dos principais assuntos de tecnologia do momento, acesse já!' />
+            </Head>      
             <BlogCover />
             <GridThreeColumn>
                 <ImageTitleParagrafy
