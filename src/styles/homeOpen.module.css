@@ -131,11 +131,11 @@
         display: flex;
         align-items: flex-start; 
         justify-content: center;
-        background-image: url('../../public/images/nodejs-api-rest.png');
+        background-image: url('../../public/images/fundo_home_one.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: scroll;
         width: 100%;
         height: 675px;
         position: relative;    
