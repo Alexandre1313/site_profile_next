@@ -3,30 +3,31 @@ import { useEffect, useState } from "react";
 import style from "../src/styles/menuMobileFooter.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function MenuMobile() {
 
     const router = useRouter(); // Inicialize o useRouter
 
     useEffect(() => {
-    // Função para fechar o menu mobile ao mudar de rota
-    const handleRouteChange = () => {
-      setVisible(false);
-    };
+        // Função para fechar o menu mobile ao mudar de rota
+        const handleRouteChange = () => {
+            setVisible(false);
+        };
 
-    // Adicione o event listener para monitorar as mudanças de rota
-    router.events.on("routeChangeStart", handleRouteChange);
+        // Adicione o event listener para monitorar as mudanças de rota
+        router.events.on("routeChangeStart", handleRouteChange);
 
-    // Remova o event listener quando o componente for desmontado
-    return () => {
-        router.events.off("routeChangeStart", handleRouteChange);
+        // Remova o event listener quando o componente for desmontado
+        return () => {
+            router.events.off("routeChangeStart", handleRouteChange);
         };
     }, [router]);
-    
+
     const [fill, setFill] = useState('#15803d');
 
     const handleMouseOver = () => {
-        setFill('#191c20');
+        setFill('#22c55e');
     };
 
     const handleMouseOut = () => {
@@ -36,7 +37,7 @@ export default function MenuMobile() {
     const [fillc, setFillc] = useState('#fb913c');
 
     const handleMouseOverc = () => {
-        setFillc('#191c20');
+        setFillc('#fcd34d');
     };
 
     const handleMouseOutc = () => {
@@ -55,40 +56,46 @@ export default function MenuMobile() {
 
     return (
         <>
-            <div className={isVisible ? style.divnavMobile : style.hiddenn}>
-                <nav className={style.navMobile}>
-                    <ul className={style.listMobile}>
-                        <li className={style.listitemMobile}>
-                            <Link legacyBehavior href={"./"}>
-                                <a className={style.listlinkMobile}>
-                                    Home
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={style.listitemMobile}>
-                            <Link legacyBehavior href={"/blog"}>
-                                <a className={style.listlinkMobile}>
-                                    Blog
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={style.listitemMobile}>
-                            <Link legacyBehavior href={"/sobre"}>
-                                <a className={style.listlinkMobile}>
-                                    Sobre
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={style.listitemMobile}>
-                            <Link legacyBehavior href={"/contato"}>
-                                <a className={style.listlinkMobile}>
-                                    Contato
-                                </a>
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: isVisible ? 1 : 0, height: isVisible ? "auto" : 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
+                <div className={isVisible ? style.divnavMobile : style.hiddenn}>
+                    <nav className={style.navMobile}>
+                        <ul className={style.listMobile}>
+                            <li className={style.listitemMobile}>
+                                <Link legacyBehavior href={"./"}>
+                                    <a className={style.listlinkMobile}>
+                                        Home
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={style.listitemMobile}>
+                                <Link legacyBehavior href={"/blog"}>
+                                    <a className={style.listlinkMobile}>
+                                        Blog
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={style.listitemMobile}>
+                                <Link legacyBehavior href={"/sobre"}>
+                                    <a className={style.listlinkMobile}>
+                                        Sobre
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className={style.listitemMobile}>
+                                <Link legacyBehavior href={"/contato"}>
+                                    <a className={style.listlinkMobile}>
+                                        Contato
+                                    </a>
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </motion.div>
             <button onClick={setOpen} className={isVisible ? style.hiddenn : ''}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
