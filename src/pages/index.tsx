@@ -22,31 +22,9 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
             >
                 <HomeOpen />
-                <SectionImage
-                    urlImage={`/images/Eniac_500.jpg`}
-                    altImage={`Imagem Eniac`}
-                    heightImage={500}
-                    widthImage={500}
-                    titleBox={`O ENIAC, pioneiro da computação eletrônica!`}
-                    paragrafyOneBox={`O ENIAC, ou Electronic Numerical Integrator and Computer, 
-                foi um dos primeiros computadores eletrônicos de grande escala e marcou um 
-                marco significativo na história da computação. Construído durante a Segunda 
-                Guerra Mundial pelos engenheiros John W. Mauchly e J. Presper Eckert, ele era 
-                colossal, pesando cerca de 30 toneladas e preenchendo várias salas com suas válvulas eletrônicas.`}
-                    paragrafyTwoBox={`Ao contrário dos sistemas modernos, o ENIAC era programado 
-                manualmente através de cabos e interruptores para realizar cálculos complexos, 
-                contribuindo para cálculos balísticos militares. Seu processo de programação era 
-                trabalhoso, mas sua capacidade de processamento era revolucionária para a época.`}
-                    paragrafyThreeBox={`Embora seus dias de funcionamento tenham terminado em 1955, 
-                o ENIAC abriu caminho para a era da computação eletrônica e deu início a uma revolução 
-                tecnológica que ainda hoje impacta o mundo em que vivemos. Seu legado perdura como um 
-                marco pioneiro que desencadeou uma corrida de avanços na computação, impulsionando a 
-                evolução dos computadores modernos e redefinindo completamente o panorama da tecnologia.`}
-                    styleType={true}
-                />
                 <SectionImageInverse
                     urlImage={`/images/next_js.png`}
-                    altImage={`Imagem Eniac`}
+                    altImage={`Imagem Next JS`}
                     heightImage={500}
                     widthImage={500}
                     titleBox={`A Ascensão do Next.js - Uma Revolução no Desenvolvimento Web`}
@@ -75,6 +53,28 @@ export default function Home() {
                     styleType={true}
                 />
                 <HomeGridWithBackgroundImage />
+                <SectionImage
+                    urlImage={`/images/Eniac_500.jpg`}
+                    altImage={`Imagem Eniac`}
+                    heightImage={500}
+                    widthImage={500}
+                    titleBox={`O ENIAC, pioneiro da computação eletrônica!`}
+                    paragrafyOneBox={`O ENIAC, ou Electronic Numerical Integrator and Computer, 
+                foi um dos primeiros computadores eletrônicos de grande escala e marcou um 
+                marco significativo na história da computação. Construído durante a Segunda 
+                Guerra Mundial pelos engenheiros John W. Mauchly e J. Presper Eckert, ele era 
+                colossal, pesando cerca de 30 toneladas e preenchendo várias salas com suas válvulas eletrônicas.`}
+                    paragrafyTwoBox={`Ao contrário dos sistemas modernos, o ENIAC era programado 
+                manualmente através de cabos e interruptores para realizar cálculos complexos, 
+                contribuindo para cálculos balísticos militares. Seu processo de programação era 
+                trabalhoso, mas sua capacidade de processamento era revolucionária para a época.`}
+                    paragrafyThreeBox={`Embora seus dias de funcionamento tenham terminado em 1955, 
+                o ENIAC abriu caminho para a era da computação eletrônica e deu início a uma revolução 
+                tecnológica que ainda hoje impacta o mundo em que vivemos. Seu legado perdura como um 
+                marco pioneiro que desencadeou uma corrida de avanços na computação, impulsionando a 
+                evolução dos computadores modernos e redefinindo completamente o panorama da tecnologia.`}
+                    styleType={true}
+                />                
             </motion.div>
         </>
     )

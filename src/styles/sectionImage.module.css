@@ -283,6 +283,7 @@
         border-radius: 9px;
         box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
         border: 1px solid #fb923c;
+        width: 70%;
     }
 
 }
