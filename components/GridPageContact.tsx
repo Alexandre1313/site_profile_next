@@ -15,7 +15,7 @@ const GridPageContact = () => {
                 </div>
                 <div className={style.primaryGrid}>
                     <Image className={style.imgContact}
-                        src={`/images/comunicacao-global.png`}
+                        src={`/images/social_media_3.png`}
                         alt={`Imagem de fundo da página de contato`}
                         width={512}
                         height={512}
@@ -25,6 +25,15 @@ const GridPageContact = () => {
                 <div className={style.secondaryGrid}>                    
                     <Accordion_Social/>
                 </div>
+                <div className={style.fourGrid}>
+                    <Image className={style.imgContact}
+                        src={`/images/img_rd2.png`}
+                        alt={`Imagem de fundo da página de contato`}
+                        width={512}
+                        height={512}
+                        priority={true}
+                    />                    
+                </div>      
                 <div className={style.thirdGrid}>
                     <Accordion_two />                    
                 </div>

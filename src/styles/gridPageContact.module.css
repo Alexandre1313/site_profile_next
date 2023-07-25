@@ -11,7 +11,7 @@
 .gridMaster {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
-    grid-template-rows: 1;  
+    grid-template-rows: 3;  
     margin: 0px 40px 0px 40px;  
     width: 1200px;
     align-items: start;
@@ -32,26 +32,32 @@
     grid-row: 2;
     justify-self: start;
     padding-right: 0px;
-    margin-top: 0px;
+    margin-right: 70px;
 }
 
 .secondaryGrid {
     margin-top: 70px;
     grid-column: 2 ;
-    grid-row: 2;  
+    grid-row: 2 / span 3;  
     min-height: 635px;  
 }
 
 .thirdGrid {
     margin-top: 70px;
     grid-column: 3 ;
-    grid-row: 2; 
+    grid-row: 2 / span 3; 
     min-height: 635px;
+}
+
+.fourGrid {
+    display: none;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 .imgContact {
     border-radius: 9px;  
-    margin-top: 52px; 
+    margin-top: 68px;     
 }
 
 .adorno {
@@ -109,6 +115,7 @@
         align-items: center;
         padding-right: 0px;
         margin-top: -50px;
+        margin-right: 0px;
     }
     
     .secondaryGrid {
@@ -137,6 +144,7 @@
         border-radius: 9px;  
         margin-top: 70px;   
         margin-bottom: 50px; 
+        width: 70%;
     }
     
     .adorno {
@@ -195,26 +203,36 @@
         justify-self: center;
         padding-right: 0px;
         margin-top: -50px;
+        margin-right: 0px;
     }
     
     .secondaryGrid {
         grid-column: 1 ;
         grid-row: 3;
         width: 100%;  
-        align-items: start;
-        justify-self: end;  
+        align-items: center;
+        justify-self: centar;  
         min-height: 0px;   
         margin-top: -40px;    
     }
     
     .thirdGrid {
         grid-column: 1 ;
-        grid-row: 4;
+        grid-row: 5;
         width: 100%;  
         align-items: start;
         justify-self: start;  
         min-height: 0px; 
-        margin-top: 0px;             
+        margin-top: -39px;             
+    }
+
+    .fourGrid {
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+        padding-right: 0px;
+        margin-top: -30px;
     }
     
     .imgContact {
@@ -223,6 +241,7 @@
         border-radius: 9px;  
         margin-top: 50px;   
         margin-bottom: 50px; 
+        width: 70%;
     }
     
     .adorno {
