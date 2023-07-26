@@ -7,7 +7,7 @@ import DivBorderColorAnimated from "./DivBorderColorAnimated";
 const HomeOpen = () => {
     return (
         <>
-            <div className={styles.block}></div>
+            
             <div className={styles.divMaster}>
                 <div className={styles.divPrimary}>
                     <div className={styles.divTitlesAnimated}>
