@@ -20,6 +20,15 @@ export default function Blog() {
                 <BlogCover />
                 <GridThreeColumn>
                     <ImageTitleParagrafy
+                        urlImage={`/images/blog_next_js_a_jornada_pelo_ssr250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_next_js_a_jornada_pelo_ssr`}
+                        titleComponent={`Next.js: A jornada pelo SSR e Páginas Estáticas`}
+                        paragrafyComponent={`Hoje vamos embarcar em uma emocionante jornada pelo 
+                        mundo do desenvolvimento web com Next.js, uma poderosa estrutura de código 
+                        aberto construída em cima do React.`}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/ja_pensou_como_surgiu_a_internet250.jpg`}
                         priorityImage={false}
                         urlpost={`/blog_ja_pensou_como_surgiu_a_internet`}
