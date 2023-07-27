@@ -34,7 +34,7 @@ export default function ImageTitleParagrafy(props: ImageTitleParagrafyProps) {
                 </div>
                 <button className={style.buton}>
                     <Link legacyBehavior href={props.urlpost}>
-                        <a>Leia mais</a>
+                        <a className={style.linkButton}>Leia mais</a>
                     </Link>
                 </button>
             </div>

@@ -62,14 +62,18 @@
 
 .buton {
     background-color: #15803d;
-    color: #ffffff;
-    padding: 0.1em 2em;
+    color: #ffffff;    
     border-radius: 7px;  
-        
+    padding: 0.1em 0em 0.3em 0em;     
 }
 
 .buton:hover {
     background-color: #16a34a;
     color: #000000;
     transition-duration: .45s;
+}
+
+.linkButton {    
+    width: 100%;
+    padding: 0em 2em 0em 2em;        
 }
