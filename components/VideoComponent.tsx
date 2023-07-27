@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../src/styles/videoComponent.module.css";
+import build from "next/dist/build";
 
 export interface VideoComponentProps {
     urlVideo: string;
@@ -11,22 +12,25 @@ export interface VideoComponentProps {
 }
 
 const VideoComponent = (props: VideoComponentProps) => {
-    const [isPlaying, setIsPlaying] = useState(false);    
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [videoEnded, setVideoEnded] = useState(false);
 
     const handlePlayButtonClick = () => {
-        setIsPlaying(true);        
+        setIsPlaying(true);
+        setVideoEnded(false);
     };
 
     const handleVideoEnd = () => {
-        setIsPlaying(false);        
+        setIsPlaying(false);
+        setVideoEnded(true);
     };
 
     return (
         <div className={styles.divVideo}>
             <h2 className={styles.titleVideo}>{props.titleVideo}</h2>
-            <div className={styles.overlay}>                                
-                    <div className={`${!isPlaying ? styles.overlayBefore
-                        : styles.hiddenn}`}>
+            <div className={styles.overlay}>
+                {!isPlaying && !videoEnded && (
+                    <div className={styles.overlayBefore}>
                         <button className={styles.btn} onClick={handlePlayButtonClick}
                         onTouchStart={handlePlayButtonClick} onTouchEnd={handleVideoEnd}
                         onTouchStartCapture={handlePlayButtonClick}
@@ -39,15 +43,19 @@ const VideoComponent = (props: VideoComponentProps) => {
                                 priority={true}
                             />
                         </button>
-                    </div>                                   
+                    </div>
+                )}
+                {isPlaying && (                    
                     <iframe
                         className={styles.iframeVideo}
                         width={props.videoWidth}
                         height={props.videoHeight}
                         src={props.urlVideo}
                         allow={props.videoAllow}
-                        allowFullScreen                        
-                    ></iframe>                 
+                        allowFullScreen
+                        onEnded={handleVideoEnd}
+                    ></iframe>                  
+                )}
             </div>
         </div>
     );
