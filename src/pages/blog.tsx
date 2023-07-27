@@ -20,6 +20,15 @@ export default function Blog() {
                 <BlogCover />
                 <GridThreeColumn>
                     <ImageTitleParagrafy
+                        urlImage={`/images/blog_desvendando_o_universo_node_JS_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_desvendando_o_universo_node_JS`}
+                        titleComponent={`Desvendando o Universo do Node.js`}
+                        paragrafyComponent={`Node.js é um ambiente de tempo de execução JavaScript 
+                        de código aberto e multiplataforma, que permite que os desenvolvedores criem 
+                        aplicações de rede rápidas e escaláveis. Com uma comunidade ativa`}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/blog_next_js_a_jornada_pelo_ssr250.png`}
                         priorityImage={true}
                         urlpost={`/blog_next_js_a_jornada_pelo_ssr`}
