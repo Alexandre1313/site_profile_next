@@ -59,7 +59,7 @@ export default function MenuMobile() {
             <motion.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: isVisible ? 1 : 0, height: isVisible ? "auto" : 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
             >
                 <div className={isVisible ? style.divnavMobile : style.hiddenn}>
                     <nav className={style.navMobile}>

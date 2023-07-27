@@ -11,25 +11,22 @@ export interface VideoComponentProps {
 }
 
 const VideoComponent = (props: VideoComponentProps) => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [videoEnded, setVideoEnded] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);    
 
     const handlePlayButtonClick = () => {
-        setIsPlaying(true);
-        setVideoEnded(false);
+        setIsPlaying(true);        
     };
 
     const handleVideoEnd = () => {
-        setIsPlaying(false);
-        setVideoEnded(true);
+        setIsPlaying(false);        
     };
 
     return (
         <div className={styles.divVideo}>
             <h2 className={styles.titleVideo}>{props.titleVideo}</h2>
-            <div className={styles.overlay}>
-                {!isPlaying && !videoEnded && (
-                    <div className={styles.overlayBefore}>
+            <div className={styles.overlay}>                                
+                    <div className={`${!isPlaying ? styles.overlayBefore
+                        : styles.hiddenn}`}>
                         <button className={styles.btn} onClick={handlePlayButtonClick}
                         onTouchStart={handlePlayButtonClick} onTouchEnd={handleVideoEnd}
                         onTouchStartCapture={handlePlayButtonClick}
@@ -42,19 +39,15 @@ const VideoComponent = (props: VideoComponentProps) => {
                                 priority={true}
                             />
                         </button>
-                    </div>
-                )}
-                {isPlaying && (                    
+                    </div>                                   
                     <iframe
                         className={styles.iframeVideo}
                         width={props.videoWidth}
                         height={props.videoHeight}
                         src={props.urlVideo}
                         allow={props.videoAllow}
-                        allowFullScreen
-                        onEnded={handleVideoEnd}
-                    ></iframe>                   
-                )}
+                        allowFullScreen                        
+                    ></iframe>                 
             </div>
         </div>
     );

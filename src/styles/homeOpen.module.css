@@ -2,9 +2,9 @@
     display: flex;
     align-items: flex-start; 
     justify-content: center;
-    background-image: url('../../public/images/fundo_home_one.jpg');
+    background-image: url('../../public/images/img_0125.jpg');
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -64,7 +64,7 @@
         display: flex;
         align-items: flex-start; 
         justify-content: center;
-        background-image: url('../../public/images/fundo_home_one.jpg');
+        background-image: url('../../public/images/img_0125.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -122,11 +122,11 @@
         display: flex;
         align-items: flex-start; 
         justify-content: center;
-        background-image: url('../../public/images/fundo_home_one.jpg');
+        background-image: url('../../public/images/img_0125.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         width: 100%;
         height: 755px;
         position: relative;           
