@@ -1,6 +1,7 @@
 .divMaster {
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
+    background-size:  1920px 1080px; 
     justify-content: center;
     background-image: url('../../public/images/img_0125.jpg');
     background-repeat: no-repeat;

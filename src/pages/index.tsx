@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
 import HomeGridWithBackgroundImage from '../../components/HomeGridWithBackgroundImage'
 import HomeOpen from '../../components/HomeOpen'
 import SectionImage from '../../components/SectionImage'
 import SectionImageInverse from '../../components/SectionImageInverse'
-import Head from 'next/head'
-import { motion } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +20,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.1, ease: "easeInOut" }}
-            >
+            >                
                 <HomeOpen />
                 <SectionImageInverse
                     urlImage={`/images/next_js.png`}
