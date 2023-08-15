@@ -98,11 +98,11 @@ const Accordion_Social = () => {
                             height={100}
                             priority={true}
                         />
-                        <Link legacyBehavior href={'https://www.facebook.com/alexandre.cordeiro.714'}>
-                            <p className={styles.info}>
+                       <Link  legacyBehavior href={'https://www.facebook.com/alexandre.cordeiro.714'}>
+                            <a className={styles.info} target={`_blank`}>
                                 Acesse -&gt;
-                            </p>
-                        </Link>
+                            </a>
+                        </Link>                       
                     </div>
                 </motion.div>
             </div>
@@ -147,11 +147,11 @@ const Accordion_Social = () => {
                             height={100}
                             priority={true}
                         />
-                        <Link legacyBehavior href={'https://www.instagram.com/alexandre.13a'}>
-                            <p className={styles.info}>
+                        <Link  legacyBehavior href={'https://www.instagram.com/alexandre.13a'}>
+                            <a className={styles.info} target={`_blank`}>
                                 Acesse -&gt;
-                            </p>
-                        </Link>
+                            </a>                                
+                        </Link>                        
                     </div>
                 </motion.div>
             </div>
@@ -197,10 +197,10 @@ const Accordion_Social = () => {
                             priority={true}
                         />
                         <Link legacyBehavior href={'https://www.linkedin.com/in/alexandre-cordeiro-00aa411a3'}>
-                            <a className={styles.info}>
+                            <a className={styles.info} target={`_blank`}>
                                 Acesse -&gt;
                             </a>
-                        </Link>
+                        </Link>                       
                     </div>
                 </motion.div>
             </div>
@@ -245,11 +245,11 @@ const Accordion_Social = () => {
                             height={100}
                             priority={true}
                         />
-                        <Link legacyBehavior href={''}>
-                            <p className={styles.info}>
+                        <Link  legacyBehavior href={''}>
+                            <a target={`_blank`}>
                                 Inativo
-                            </p>
-                        </Link>
+                            </a>
+                        </Link>                        
                     </div>
                 </motion.div>
             </div>

@@ -22,8 +22,7 @@ const Header = () => {
                 currentScrollPos <= 500 || currentScrollPos < prevScrollPos
             );
             setPrevScrollPos(currentScrollPos);
-        };
-
+        };        
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);

@@ -15,7 +15,7 @@ export default function SvgIconWhatsApp() {
     return (
         <>
             <Link legacyBehavior href={"https://api.whatsapp.com/send?phone=5547997455134"}>
-                <a href="">
+                <a target={`_blank`}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0,0,256,256"

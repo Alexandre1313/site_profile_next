@@ -97,7 +97,7 @@ const Accordion_two = () => {
                             priority={true}
                         />
                         <Link legacyBehavior href={'tel:+5547997285083'}>
-                            <a className={styles.info}>
+                            <a className={styles.info} target={`_blank`}>
                                 &#40;47&#41; 99728-5083
                             </a>
                         </Link>
@@ -146,7 +146,7 @@ const Accordion_two = () => {
                             priority={true}
                         />
                         <Link legacyBehavior href={'https://api.whatsapp.com/send?phone=5547997455134'}>
-                            <a className={styles.info}>
+                            <a className={styles.info} target={`_blank`}>
                                 &#40;47&#41; 99745-5134
                             </a>
                         </Link>
@@ -195,7 +195,7 @@ const Accordion_two = () => {
                             priority={true}
                         />
                         <Link legacyBehavior href={'mailto:alexandre.13a@gmail.com'}>
-                            <a className={styles.info}>
+                            <a className={styles.info} target={`_blank`}>
                                 alexandre.13a@gmail.com
                             </a>
                         </Link>
@@ -244,7 +244,7 @@ const Accordion_two = () => {
                             priority={true}
                         />
                         <Link legacyBehavior href={'https://goo.gl/maps/gsER5nHv1PjeDtsx8'}>
-                            <a className={styles.info}>
+                            <a className={styles.info} target={`_blank`}>
                                 Rua Macaé, 43 - Fortaleza - Blumenau - SC - Cep: 89056-015
                             </a>
                         </Link>

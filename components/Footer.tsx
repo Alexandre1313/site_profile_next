@@ -35,7 +35,7 @@ export default function Footer() {
                             >
                                 <li className={style.listitem}>
                                     <span className={style.adorno}>&lt;/ </span>
-                                    <Link legacyBehavior href={"./"}>
+                                    <Link  legacyBehavior href={"./"}>
                                         <a className={style.listlink}>Home</a>
                                     </Link>
                                     <span className={style.adorno}> &gt;</span>

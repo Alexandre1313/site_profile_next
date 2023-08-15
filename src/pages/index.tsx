@@ -74,8 +74,22 @@ export default function Home() {
                 marco pioneiro que desencadeou uma corrida de avanços na computação, impulsionando a 
                 evolução dos computadores modernos e redefinindo completamente o panorama da tecnologia.`}
                     styleType={true}
-                />                
+                /> 
+                <SectionImageInverse
+                    urlImage={`/images/blog_desvendando_o_hook_use_effect_do_react_450.png`}
+                    altImage={`Imagem Use Effect`}
+                    heightImage={500}
+                    widthImage={500}
+                    titleBox={`Desvendando o Hook useEffect do React: Gerenciando Efeitos Colaterais de 
+                    Forma Eficiente`}
+                    paragrafyOneBox={`O React, uma das bibliotecas JavaScript mais populares para construção 
+                    de interfaces de usuário, introduziu uma poderosa ferramenta para lidar com efeitos colaterais 
+                    em componentes funcionais: o Hook useEffect. Esse hook desempenha um papel crucial ao permitir 
+                    que desenvolvedores controlem o ciclo de vida e comportamento de seus componentes de maneira 
+                    mais eficiente e organizada.`}  
+                    paragrafyTwoBox={`leia mais no BLOG...`}                
+                    styleType={false}
+                />                              
             </motion.div>
         </>
-    )
-}
+    )}

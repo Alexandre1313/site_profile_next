@@ -20,6 +20,28 @@ export default function Blog() {
                 <BlogCover />
                 <GridThreeColumn>
                     <ImageTitleParagrafy
+                        urlImage={`/images/blog_desvendando_o_hook_use_effect_do_react_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_desvendando_o_hook_use_effect_do_react`}
+                        titleComponent={`Desvendando o Hook useEffect do React`}
+                        paragrafyComponent={`O React, uma das bibliotecas JavaScript mais populares 
+                        para construção de interfaces de usuário, introduziu uma poderosa ferramenta 
+                        para lidar com efeitos colaterais em componentes funcionais: o Hook useEffect. 
+                        Esse hook desempenha um papel crucial ao permitir que desenvolvedores 
+                        controlem o ciclo de vida e comportamento de seus componentes de maneira 
+                        mais eficiente e organizada.`}
+                    />
+                    <ImageTitleParagrafy
+                        urlImage={`/images/blog_html_uma_josrnada_pelo_coracao_da_web_250.jpg`}
+                        priorityImage={true}
+                        urlpost={`/blog_html_uma_josrnada_pelo_coracao_da_web`}
+                        titleComponent={`HTML: Uma Jornada pelo Coração da Web`}
+                        paragrafyComponent={`O HyperText Markup Language, mais conhecido como HTML, é a 
+                        pedra fundamental da World Wide Web, a teia global que conecta bilhões de pessoas 
+                        e informações. Desde sua criação nos anos 90, o HTML tem desempenhado um papel 
+                        fundamental na estruturação e apresentação de conteúdo na internet.`}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/blog_desvendando_o_universo_node_JS_250.png`}
                         priorityImage={true}
                         urlpost={`/blog_desvendando_o_universo_node_JS`}

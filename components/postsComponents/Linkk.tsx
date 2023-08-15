@@ -10,7 +10,7 @@ const Linkk = (props: LinkkProps) => {
     return (
         <button className={style.descriptionLink}>
             <Link legacyBehavior href={props.urlLink}>
-                <a>{props.description}</a>
+                <a target={`_blank`}>{props.description}</a>
             </Link>
         </button>
     )

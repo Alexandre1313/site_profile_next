@@ -34,14 +34,16 @@ const DivBorderColorAnimated = (props: DivBorderColorAnimatedProps) => {
             >
                 <div className={styles.divRadius}>
                     <div className={styles.divImage}>
-                        <Link href={props.linkk}>
-                            <Image className={styles.imageE}
-                                src={props.urlImage}
-                                alt={props.altImage}
-                                height={props.imageHeight}
-                                width={props.imageWidth}
-                                priority={props.imagePriority}
-                            />
+                        <Link legacyBehavior href={props.linkk}>
+                            <a target={`_blank`} >
+                                <Image className={styles.imageE}
+                                    src={props.urlImage}
+                                    alt={props.altImage}
+                                    height={props.imageHeight}
+                                    width={props.imageWidth}
+                                    priority={props.imagePriority}
+                                />
+                            </a>
                         </Link>
                     </div>
                 </div>
