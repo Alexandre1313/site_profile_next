@@ -13,7 +13,7 @@ const arrayDivImage: ReactNode[] = [
 ]
 
 const arraydivText: ReactNode[] = [
-    <Title1 key={1} text={'Next.js: A jornada pelo SSR e Páginas Estáticas'} />,
+    <Title1 key={1} text={'Next.js - A jornada pelo SSR e Páginas Estáticas'} />,
 
     <Parag key={2} text={`Hoje vamos embarcar em uma emocionante jornada pelo 
     mundo do desenvolvimento web com Next.js, uma poderosa estrutura de código 

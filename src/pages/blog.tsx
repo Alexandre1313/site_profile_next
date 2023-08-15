@@ -19,11 +19,23 @@ export default function Blog() {
             >
                 <BlogCover />
                 <GridThreeColumn>
+                <ImageTitleParagrafy
+                        urlImage={`/images/mongo_db_250.jpg`}
+                        priorityImage={true}
+                        urlpost={`/blog_as_profundezas_do_armazenamento_de_dados_no_sql`}
+                        titleComponent={`Armazenamento de dados No SQL`}
+                        paragrafyComponent={`No cenário em constante evolução da tecnologia, onde a 
+                        agilidade, escalabilidade e flexibilidade são cruciais para o desenvolvimento 
+                        de aplicações modernas, o MongoDB surge como uma força impulsionadora, 
+                        revolucionando a maneira como armazenamos e acessamos dados. Este sistema 
+                        de gerenciamento de banco de dados NoSQL, conhecido por sua abordagem não 
+                        relacional, conquistou o coração dos desenvolvedores ao redor do `}
+                    />
                     <ImageTitleParagrafy
                         urlImage={`/images/blog_desvendando_o_hook_use_effect_do_react_250.png`}
                         priorityImage={true}
                         urlpost={`/blog_desvendando_o_hook_use_effect_do_react`}
-                        titleComponent={`Desvendando o Hook useEffect do React`}
+                        titleComponent={`Desvendando o Hook UseEffect do React`}
                         paragrafyComponent={`O React, uma das bibliotecas JavaScript mais populares 
                         para construção de interfaces de usuário, introduziu uma poderosa ferramenta 
                         para lidar com efeitos colaterais em componentes funcionais: o Hook useEffect. 
@@ -35,7 +47,7 @@ export default function Blog() {
                         urlImage={`/images/blog_html_uma_josrnada_pelo_coracao_da_web_250.jpg`}
                         priorityImage={true}
                         urlpost={`/blog_html_uma_josrnada_pelo_coracao_da_web`}
-                        titleComponent={`HTML: Uma Jornada pelo Coração da Web`}
+                        titleComponent={`HTML - Uma jornada pelo coração da Web`}
                         paragrafyComponent={`O HyperText Markup Language, mais conhecido como HTML, é a 
                         pedra fundamental da World Wide Web, a teia global que conecta bilhões de pessoas 
                         e informações. Desde sua criação nos anos 90, o HTML tem desempenhado um papel 
@@ -45,7 +57,7 @@ export default function Blog() {
                         urlImage={`/images/blog_desvendando_o_universo_node_JS_250.png`}
                         priorityImage={true}
                         urlpost={`/blog_desvendando_o_universo_node_JS`}
-                        titleComponent={`Desvendando o Universo do Node.js`}
+                        titleComponent={`Desvendando o universo do Node.js`}
                         paragrafyComponent={`Node.js é um ambiente de tempo de execução JavaScript 
                         de código aberto e multiplataforma, que permite que os desenvolvedores criem 
                         aplicações de rede rápidas e escaláveis. Com uma comunidade ativa`}
@@ -54,7 +66,7 @@ export default function Blog() {
                         urlImage={`/images/blog_next_js_a_jornada_pelo_ssr250.png`}
                         priorityImage={true}
                         urlpost={`/blog_next_js_a_jornada_pelo_ssr`}
-                        titleComponent={`Next.js: A jornada pelo SSR e Páginas Estáticas`}
+                        titleComponent={`Next.js - A jornada pelo SSR e Páginas Estáticas`}
                         paragrafyComponent={`Hoje vamos embarcar em uma emocionante jornada pelo 
                         mundo do desenvolvimento web com Next.js, uma poderosa estrutura de código 
                         aberto construída em cima do React.`}

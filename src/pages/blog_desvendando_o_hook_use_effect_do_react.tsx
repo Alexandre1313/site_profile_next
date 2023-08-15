@@ -13,9 +13,9 @@ const arrayDivImage: ReactNode[] = [
 ]
 
 const arraydivText: ReactNode[] = [
-    <Title1 key={1} text={`Desvendando o Hook useEffect do React`} />,
+    <Title1 key={1} text={`Desvendando o Hook UseEffect do React`} />,
 
-    <Title2 key={2} text={`Gerenciando Efeitos Colaterais de Forma Eficiente`}/>,
+    <Title2 key={2} text={`Gerenciando efeitos colaterais de forma eficiente`}/>,
 
     <Parag key={3} text={`O React, uma das bibliotecas JavaScript mais populares para construção 
     de interfaces de usuário, introduziu uma poderosa ferramenta para lidar com efeitos colaterais 
@@ -38,12 +38,12 @@ const arraydivText: ReactNode[] = [
     função que será executada após cada renderização do componente. Essa função pode realizar 
     diversas tarefas, como:`} />,    
 
-    <Title2 key={7} text={`Busca e Atualização de Dados`}/>,   
+    <Title2 key={7} text={`Busca e atualização de dados`}/>,   
     
     <Parag key={8} text={`O useEffect é frequentemente utilizado para buscar dados de APIs ou 
     bancos de dados externos e atualizar o estado do componente com base nessas informações.`} />,    
 
-    <Title2 key={9} text={`Assinatura de Eventos`}/>,
+    <Title2 key={9} text={`Assinatura de eventos`}/>,
 
     <Parag key={10} text={`Ele pode ser usado para assinar eventos globais ou do navegador, como 
     cliques de mouse, pressionamentos de teclas ou redimensionamento da janela.`} />,
@@ -53,13 +53,13 @@ const arraydivText: ReactNode[] = [
     <Parag key={12} text={`É possível usar o useEffect para manipular o DOM, seja para adicionar 
     ou remover elementos, alterar estilos ou executar outras operações de manipulação.`} />,
 
-    <Title2 key={13} text={`Lidando com Recursos`}/>,   
+    <Title2 key={13} text={`Lidando com recursos`}/>,   
    
     <Parag key={14} text={`Se um componente precisar alocar recursos, como conexões de socket, o 
     useEffect também é útil para garantir a liberação adequada desses recursos quando o componente 
     for desmontado.`} />,
 
-    <Title2 key={15} text={`Otimização de Renderização:`}/>,
+    <Title2 key={15} text={`Otimização de renderização:`}/>,
 
     <Parag key={16} text={`O useEffect pode ser utilizado para otimizar a renderização, evitando que 
     certas operações sejam executadas em todas as renderizações.`} />,

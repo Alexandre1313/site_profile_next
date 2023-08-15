@@ -14,8 +14,8 @@ const arrayDivImage: ReactNode[] = [
 ]
 
 const arraydivText: ReactNode[] = [
-    <Title1 key={1} text={`Desvendando o Universo do Node.js: Uma Jornada 
-    pelo Ambiente de Tempo de Execução JavaScript`} />,
+    <Title1 key={1} text={`Desvendando o universo do Node.js - Uma jornada 
+    pelo ambiente de tempo de execução JavaScript`} />,
 
     <Parag key={2} text={`Node.js é um ambiente de tempo de execução JavaScript de código 
     aberto e multiplataforma, que permite que os desenvolvedores criem aplicações de rede 
@@ -36,7 +36,7 @@ const arraydivText: ReactNode[] = [
     thread do Node.js possa manipular várias solicitações de forma concorrente, sem a 
     necessidade de criar novos threads para cada solicitação.`} />,
 
-    <Title2 key={6} text={`Principais Características`}/>,    
+    <Title2 key={6} text={`Principais características`}/>,    
 
     <Parag key={7} text={`Rápido e Eficiente: O Node.js é conhecido por sua alta velocidade 
     de execução de código, graças ao motor V8. Sua arquitetura não bloqueante torna o 
@@ -56,7 +56,7 @@ const arraydivText: ReactNode[] = [
     <Parag key={11} text={`Code Sharing: O Node.js facilita o compartilhamento de código 
     entre o frontend e o backend, permitindo uma maior reutilização e manutenção do código.`} />,
 
-    <Title2 key={12} text={`Casos de Uso`}/>,
+    <Title2 key={12} text={`Casos de uso`}/>,
 
     <Parag key={13} text={`O Node.js é amplamente utilizado em diversos casos de uso, incluindo:`} />,
 

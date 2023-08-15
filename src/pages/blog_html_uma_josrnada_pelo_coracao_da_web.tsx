@@ -13,14 +13,14 @@ const arrayDivImage: ReactNode[] = [
 ]
 
 const arraydivText: ReactNode[] = [
-    <Title1 key={1} text={`HTML: Uma Jornada pelo Coração da Web`} />,
+    <Title1 key={1} text={`HTML - Uma jornada pelo coração da Web`} />,
 
     <Parag key={2} text={`O HyperText Markup Language, mais conhecido como HTML, é a pedra fundamental 
     da World Wide Web, a teia global que conecta bilhões de pessoas e informações. Desde sua criação nos 
     anos 90, o HTML tem desempenhado um papel fundamental na estruturação e apresentação de 
     conteúdo na internet.`} />,
 
-    <Title2 key={3} text={`História e Evolução`}/>,
+    <Title2 key={3} text={`História e evolução`}/>,
 
     <Parag key={4} text={`Criado por Tim Berners-Lee, o HTML nasceu como uma solução para compartilhar 
     informações científicas entre pesquisadores de todo o mundo. A primeira versão, HTML 1.0, era simples, 
@@ -28,7 +28,7 @@ const arraydivText: ReactNode[] = [
     expandia, novas versões do HTML surgiam, adicionando recursos mais avançados como imagens, links e 
     formulários interativos.`} />,    
 
-    <Title2 key={5} text={`Importância na Web Moderna`}/>, 
+    <Title2 key={5} text={`Importância na Web moderna`}/>, 
 
     <Parag key={6} text={`O HTML evoluiu para se tornar a base da experiência online. Cada página 
     da web é construída em HTML, permitindo aos desenvolvedores estruturar o conteúdo, adicionar links 
@@ -36,7 +36,7 @@ const arraydivText: ReactNode[] = [
     interpretem e exibam informações de maneira consistente, independentemente do dispositivo 
     ou plataforma utilizada.`} />,
       
-    <Title2 key={7} text={`Semântica e Acessibilidade`}/>, 
+    <Title2 key={7} text={`Semântica e acessibilidade`}/>, 
 
     <Parag key={8} text={`Além de seu papel estrutural, o HTML moderno enfatiza a semântica, ou seja, 
     atribuir significado ao conteúdo. Isso não apenas ajuda os motores de busca a entender melhor o conteúdo, 
