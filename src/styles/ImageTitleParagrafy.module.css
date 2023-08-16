@@ -1,5 +1,6 @@
 .divOutside {
-    background-color: hsl(0deg 0% 100% / 2%);
+    background: rgb(21,128,61);
+    background: linear-gradient(0deg, rgba(21,128,61,0.1292892156862745) 0%, rgba(32,32,36,1) 23%);
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -16,7 +17,8 @@
 }
 
 .divOutside:hover {
-    background-color: hsl(0deg 0% 100% / 2%);
+    background: rgb(21,128,61);
+    background: linear-gradient(0deg, rgba(21,128,61,0.17130602240896353) 0%, rgba(32,32,36,1) 23%);
     border: 1px solid rgba(21,128,61, 1);
     overflow-y: hiddenn;
     box-shadow: inset 1px 1px 19px rgba(21,128,61,0.5);

@@ -12,8 +12,8 @@ const HomeOpen = () => {
                 <div className={styles.divPrimary}>
                     <div className={styles.divTitlesAnimated}>
                             <Suspense fallback={<h1>Carregando...</h1>}>
-                                <AnimatedTitleH1 />
-                                <AnimatedTitleH2 />
+                                <AnimatedTitleH1 text={`JS Code - Welcome to my website`} />
+                                <AnimatedTitleH2  text={`Get to know me a little more...`}/>
                             </Suspense>
                         </div>
                     <div className={styles.divSecondary}>

@@ -2,7 +2,11 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import styles from "../src/styles/animatedTitleH2.module.css";
 
-const AnimatedTitleH2 = () => {
+interface TitleTwoProps {
+  text: string;
+}
+
+const AnimatedTitleH2 = (props: TitleTwoProps) => {
   const [isMounted, setIsMounted] = useState(false);
   const controls = useAnimation();
 
@@ -33,8 +37,8 @@ const AnimatedTitleH2 = () => {
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
       }}
-    >
-      Get to know me a little more...
+    >      
+      {props.text}
     </motion.h2>
   );
 };

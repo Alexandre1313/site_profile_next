@@ -2,7 +2,8 @@
     display: block;
     border-radius: 9px; 
     margin: 0px 0px 0px 0px;  
-    -webkit-tap-highlight-color: transparent;    
+    -webkit-tap-highlight-color: transparent;  
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.15);  
 }
 
 @media only screen and (min-width: 661px) and (max-width: 1023px) {

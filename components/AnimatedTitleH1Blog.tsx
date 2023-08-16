@@ -1,12 +1,12 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import styles from "../src/styles/animatedTitleH1.module.css";
+import styles from "../src/styles/animatedTitleH1Blog.module.css";
 
 interface TitleOneProps {
   text: string;
 }
 
-const AnimatedTitleH1 = (props: TitleOneProps) => {
+const AnimatedTitleH1Blog = (props: TitleOneProps) => {
   
   const [isMounted, setIsMounted] = useState(false);
   const controls = useAnimation();
@@ -44,4 +44,4 @@ const AnimatedTitleH1 = (props: TitleOneProps) => {
   );
 };
 
-export default AnimatedTitleH1
+export default AnimatedTitleH1Blog
