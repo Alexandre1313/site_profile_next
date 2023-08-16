@@ -19,7 +19,19 @@ export default function Blog() {
             >
                 <BlogCover />
                 <GridThreeColumn>
-                <ImageTitleParagrafy
+                    <ImageTitleParagrafy
+                        urlImage={`/images/use_state_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_explorando_o_hook_use_state_no_next_js`}
+                        titleComponent={`Explorando o Hook UseState no Next.js`}
+                        paragrafyComponent={`O Next.js é uma poderosa estrutura (framework) JavaScript 
+                        para construir aplicativos da web modernos e escaláveis. Um dos principais desafios 
+                        ao desenvolver aplicativos é o gerenciamento eficiente do estado da aplicação, 
+                        especialmente quando se trata de componentes reativos e interativos. É aí que 
+                        entra o hook useState do Next.js, uma ferramenta essencial para simplificar o 
+                        gerenciamento de estado em seus componentes  `}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/mongo_db_250.jpg`}
                         priorityImage={true}
                         urlpost={`/blog_as_profundezas_do_armazenamento_de_dados_no_sql`}
