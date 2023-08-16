@@ -20,6 +20,18 @@ export default function Blog() {
                 <BlogCover />
                 <GridThreeColumn>
                     <ImageTitleParagrafy
+                        urlImage={`/images/tag_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_uma_jornada_pelas_tags_html`}
+                        titleComponent={`Uma jornada pelas principais Tags HTML`}
+                        paragrafyComponent={`Quando se trata de desenvolvimento web, as tags HTML 
+                        são os blocos de construção fundamentais que definem a estrutura e o conteúdo 
+                        de uma página. Cada tag desempenha um papel único na formatação e organização 
+                        do conteúdo, permitindo que os desenvolvedores criem experiências web ricas e 
+                        interativas. Neste artigo, vamos explorar algumas das principais tags HTML e 
+                        entender suas finalidades.`}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/use_state_250.png`}
                         priorityImage={true}
                         urlpost={`/blog_explorando_o_hook_use_state_no_next_js`}
