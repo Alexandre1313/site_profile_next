@@ -1,7 +1,7 @@
 .blackC {
     background: #000000;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: flex-start;
     padding: 10px 20px 12px 20px;
     border-radius: 9px;            
@@ -11,7 +11,7 @@
     background: #3200ff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;    
     padding: 10px 20px 12px 20px;
     border-radius: 9px; 
     flex-wrap: wrap;            
@@ -52,4 +52,43 @@
 
 .paragOcul {
     display: none;
+}
+
+@media screen and (max-width: 660px) {
+    .divParagrafhis {
+        display: flex;                   
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;        
+        height: auto;    
+    }
+    
+    .whiteP {  
+        display: flex;                  
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .orangeP {  
+        display: flex;              
+        color: #c68f33;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .roseP { 
+        display: flex;                
+        color: #8c3750;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .greemP { 
+        display: flex;            
+        color: #69c986;
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
