@@ -6,11 +6,13 @@ interface PostGrid{
 }
 
 const PostGrid: React.FC<PostGrid> = ({ children }) => {
-    return  <div className={style.divGridOne}>
-        <div className={style.divGridTwo}>
-            {children}
+    return (
+        <div className={style.divGridOne}>
+            <div className={style.divGridTwo}>
+                {children}
+            </div>
         </div>
-    </div>;    
+    )    
 };
 
 export default PostGrid

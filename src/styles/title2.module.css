@@ -2,6 +2,7 @@
     font-size: 25px;
     font-weight: 800;
     color: #333333;
+    text-align: left;
     padding-top: 30px;
     padding-bottom: 17px;
     -webkit-tap-highlight-color: transparent; 
@@ -9,16 +10,14 @@
 
 @media only screen and (min-width: 661px) and (max-width: 1023px) {
     .textTitle2 {
-        font-size: 22px;
-        text-align: justify;
+        font-size: 22px;        
         line-height: 1em;
     }
 }
 
 @media screen and (max-width: 660px) {
     .textTitle2 {
-        font-size: 22px;
-        text-align: justify;
+        font-size: 21px;        
         line-height: 1em;
     }
 }

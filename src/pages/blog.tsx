@@ -20,6 +20,30 @@ export default function Blog() {
                 <BlogCover />
                 <GridThreeColumn>
                     <ImageTitleParagrafy
+                        urlImage={`/images/prompt_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_desbravando_o_prompt_de_comando_do_windows`}
+                        titleComponent={`Desbravando o prompt de comando do Windows`}
+                        paragrafyComponent={`O Prompt de Comando do Windows é uma ferramenta poderosa que 
+                        permite interagir diretamente com o sistema operacional por meio de linhas de 
+                        comando. Embora possa parecer intimidante à primeira vista, dominar alguns 
+                        comandos essenciais pode ser incrivelmente útil para tarefas de manutenção, 
+                        automação e solução de problemas. Neste `}
+                    />
+                    <ImageTitleParagrafy
+                        urlImage={`/images/sistemas_operacionais_250.png`}
+                        priorityImage={true}
+                        urlpost={`/blog_explorando_a_diversidade_dos_os`}
+                        titleComponent={`Explorando a Diversidade dos Sistemas Operacionais`}
+                        paragrafyComponent={`Se há algo que move o mundo da tecnologia, são os sistemas 
+                        operacionais. Eles são os alicerces invisíveis que sustentam nossos dispositivos, 
+                        desde os smartphones que carregamos no bolso até os servidores que alimentam a 
+                        internet. Mas, por trás dessa aparente simplicidade, há um mundo fascinante de 
+                        diversidade e complexidade. Neste post, embarcaremos em uma jornada pela paisagem 
+                        variada dos sistemas operacionais, explorando sua importância, história e as 
+                        opções disponíveis.`}
+                    />
+                    <ImageTitleParagrafy
                         urlImage={`/images/tag_250.png`}
                         priorityImage={true}
                         urlpost={`/blog_uma_jornada_pelas_tags_html`}

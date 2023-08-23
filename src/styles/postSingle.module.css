@@ -1,4 +1,6 @@
-.divImage {                 
+.divImage {
+    display: flex;
+    flex-direction: column;                 
     margin-top: 147px;                  
 }
 
@@ -28,14 +30,12 @@
 
 @media only screen and (min-width: 661px) and (max-width: 1023px) {
     .divImage {
-        margin-top: 130px;  
+        margin-top: 130px;          
     }
     .divContentText {                    
-        display: flex;
-        flex-direction: column;
         gap: 10px;              
-        padding-top: 125px; 
-        padding-left: 30px;       
+        padding-top: 0px; 
+        padding-left: 0px;       
         overflow-y: auto;
         height: 100vh;         
     }   
@@ -43,8 +43,8 @@
 
 @media screen and (max-width: 660px) {
     .divImage {
-        margin-top: 130px; 
-        display: flex;
+        flex-direction: row; 
+        margin-top: 130px;         
         aling-items: flex-start;
         justify-content: center;
     }
@@ -53,7 +53,7 @@
         aling-items: flex-start;    
         padding-top: 30px; 
         padding-bottom: 80px;
-        overflow-y: visible; 
+        overflow-y: visible;      
         height: auto;                
     }   
 }

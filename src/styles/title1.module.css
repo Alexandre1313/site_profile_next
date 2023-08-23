@@ -1,15 +1,17 @@
 .textTitle1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
+    padding-top: 4px;
+    text-align: left;
     color: #1e1f23;
-    padding-bottom:  35px;
+    padding-bottom:  20px;
     -webkit-tap-highlight-color: transparent; 
 }
 
 @media only screen and (min-width: 661px) and (max-width: 1023px) {
     .textTitle1 {
         font-size: 27px;
-        text-align: justify;
+        text-align: left;
         padding-bottom:  0px;
         line-height: 1em;
     }
@@ -17,8 +19,9 @@
 
 @media screen and (max-width: 660px) {
     .textTitle1 {
-        font-size: 27px;
-        text-align: justify;
+        font-size: 26px;
+        padding-top: 10px;
+        text-align: left;
         padding-bottom:  0px;
         line-height: 1em;
     }
