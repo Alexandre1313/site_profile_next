@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "../src/styles/sectionImageInverse.module.css"
+import Link from "next/link"
 
 export interface SectionImageInverseProps {
     urlImage: string
@@ -13,6 +14,8 @@ export interface SectionImageInverseProps {
     paragrafyThreeBox?: string
     paragrafyFourBox?: string
     paragrafyFiveBox?: string
+    buttonActive?: string
+    linkButton?: string
     styleType: boolean
 }
 
@@ -53,6 +56,11 @@ const SectionImageInverse = (props: SectionImageInverseProps) => {
                         <p className={`${styles.paragrafyBox} ${props.styleType ? styles.paragrafyBoxDark : 
                         styles.paragrafyBoxLight} ${props.paragrafyFiveBox ?
                          '' : styles.ocul}`}>{props.paragrafyFiveBox}</p>
+                        <button className={`${styles.paragrafyBox} ${props.styleType ? styles.paragrafyBoxDark : 
+                        styles.paragrafyBoxLight} ${props.buttonActive ?
+                         '' : styles.ocul}`}><Link href={props.linkButton ? props.linkButton: ''}>
+                            {props.buttonActive}</Link>
+                        </button>
                 </div>
             </div>
         </section>

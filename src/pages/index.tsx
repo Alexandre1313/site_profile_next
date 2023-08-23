@@ -50,7 +50,9 @@ export default function Home() {
                 constante crescimento, o Next.js continua a evoluir e a revolucionar o 
                 desenvolvimento web, tornando-se uma peça fundamental no futuro da criação de 
                 aplicativos modernos na internet.`}
-                    styleType={true}
+                buttonActive={`leia mais no BLOG...`} 
+                linkButton={`/blog_next_js_a_jornada_pelo_ssr`}  
+                styleType={true}
                 />
                 <HomeGridWithBackgroundImage />
                 <SectionImage
@@ -87,7 +89,8 @@ export default function Home() {
                     em componentes funcionais: o Hook useEffect. Esse hook desempenha um papel crucial ao permitir 
                     que desenvolvedores controlem o ciclo de vida e comportamento de seus componentes de maneira 
                     mais eficiente e organizada.`}  
-                    paragrafyTwoBox={`leia mais no BLOG...`}                
+                    buttonActive={`leia mais no BLOG...`} 
+                    linkButton={`/blog_desvendando_o_hook_use_effect_do_react`}               
                     styleType={false}
                 />                              
             </motion.div>

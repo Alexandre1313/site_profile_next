@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "../src/styles/sectionImage.module.css"
+import Link from "next/link"
 
 export interface SectionImageProps {
     urlImage: string
@@ -13,6 +14,8 @@ export interface SectionImageProps {
     paragrafyThreeBox?: string
     paragrafyFourBox?: string
     paragrafyFiveBox?: string
+    buttonActive?: string
+    linkButton?: string
     styleType: boolean
 }
 
@@ -50,6 +53,11 @@ const SectionImage = (props: SectionImageProps) => {
                         <p className={`${styles.paragrafyBox} ${props.styleType ? styles.paragrafyBoxDark : 
                         styles.paragrafyBoxLight} ${props.paragrafyFiveBox ?
                          '' : styles.ocul}`}>{props.paragrafyFiveBox}</p>
+                        <button className={`${styles.paragrafyBox} ${props.styleType ? styles.paragrafyBoxDark : 
+                        styles.paragrafyBoxLight} ${props.buttonActive ?
+                         '' : styles.ocul}`}><Link href={props.linkButton ? props.linkButton: ''}>
+                            {props.buttonActive}</Link>
+                        </button>
                 </div>
             </div>
         </section>
