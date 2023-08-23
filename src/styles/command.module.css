@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;    
     align-items: flex-start;
-    padding: 10px 20px 12px 20px;
+    padding: 10px 10px 12px 10px;
     border-radius: 9px;            
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;    
-    padding: 10px 20px 12px 20px;
+    padding: 10px 10px 12px 10px;
     border-radius: 9px; 
     flex-wrap: wrap;            
 }
@@ -67,28 +67,28 @@
     .whiteP {  
         display: flex;                  
         color: #ffffff;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 100;
     }
     
     .orangeP {  
         display: flex;              
         color: #c68f33;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 500;
     }
     
     .roseP { 
         display: flex;                
         color: #8c3750;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 500;
     }
     
     .greemP { 
         display: flex;            
         color: #69c986;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 500;
     }
 }
