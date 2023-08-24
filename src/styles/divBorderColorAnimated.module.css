@@ -55,7 +55,12 @@
 
 .titleE {
     font-size: 25px;
-    font-weight: 100;
+    font-weight: 400;
+    color: #5ca778;       
+}
+
+.titleE:hover {    
+    text-shadow: 0px 0px 30px #5ca778; 
 }
 
 @media only screen and (min-width: 661px) and (max-width: 1023px) {
