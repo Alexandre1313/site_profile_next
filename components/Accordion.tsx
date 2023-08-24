@@ -132,10 +132,10 @@ const Accordion = () => {
                 >
                 <div className={styles.sectionContent}>
                     <Image className={''}
-                        src={`/images/diploma_parte_1.png`}
-                        alt={`Diploma de Alexandre Cordeiro`}
-                        width={0}
-                        height={0}
+                        src={`/images/php_certification.png`}
+                        alt={`certificado de PHP de Alexandre Cordeiro folha 1`}
+                        width={1000}
+                        height={703}
                         priority={true}
                     />
                 </div>
