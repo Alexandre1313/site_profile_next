@@ -13,7 +13,8 @@
     overflow-y: hiddenn;
     transition-property: border-color,background;
     transition-duration: .45s;
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;  
+    z-index: 1;   
 }
 
 .divOutside:hover {

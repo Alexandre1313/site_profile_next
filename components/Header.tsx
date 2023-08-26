@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import style from '../src/styles/header.module.css';
