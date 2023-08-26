@@ -70,15 +70,28 @@
 .listitem {
     color: #ffffff;
     font-size: 17px;
-    padding: 5px 0px;
-    border-bottom: 2px solid transparent;
-    transition: 0.34s
+    padding: 5px 0px;    
+    transition: 0.34s ;  
+    position: relative;  
 }
 
 .listitem:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #16a34a;
-    transition: 0.34s
+    color: #cbcbcc;    
+}
+
+.listitem::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #16a34a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.listitem:hover::after {    
+    width: 100%;       
 }
 
 .listlink:hover {
