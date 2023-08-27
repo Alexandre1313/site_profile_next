@@ -40,6 +40,21 @@ const tagsHtml: tag[] = [
     { ot: "svg", ct: "/svg" },
     { ot: "math", ct: "/math" },
     { ot: "ol", ct: "/ol" },
+    { ot: "p", ct: "/p" },
+    { ot: "nav", ct: "/nav" },
+    { ot: "cite", ct: "/cite" },
+    { ot: "main", ct: "/main" },
+    { ot: "s", ct: "/s" },
+    { ot: "sub", ct: "/sub" },
+    { ot: "u", ct: "/u" },
+    { ot: "tt", ct: "/tt" },
+    { ot: "wbr", ct: "/wbr" },
+    { ot: "sup", ct: "/sup" },
+    { ot: "style", ct: "/style" },
+    { ot: "small", ct: "/small" },
+    { ot: "a", ct: "/a" },
+    { ot: "aside", ct: "/aside" },
+    { ot: "bdi", ct: "/bdi" }
 ];
 
 const tagRandon = (): tag => {
