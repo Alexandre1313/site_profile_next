@@ -38,6 +38,24 @@ const Accordion = () => {
         }
     }, []);
 
+    const [tag3, setTag3] = useState<tag | null>(null);
+
+    useEffect(() => {
+        // Verifica se o código está rodando no lado do cliente
+        if (typeof window !== 'undefined') {
+            setTag3(tagRandon());
+        }
+    }, []);
+
+    const [tag4, setTag4] = useState<tag | null>(null);
+
+    useEffect(() => {
+        // Verifica se o código está rodando no lado do cliente
+        if (typeof window !== 'undefined') {
+            setTag4(tagRandon());
+        }
+    }, []);
+
     return (
         <div className={styles.accordion}>
             <div
@@ -132,8 +150,73 @@ const Accordion = () => {
                 >
                 <div className={styles.sectionContent}>
                     <Image className={''}
+                        src={`/images/certificado_algoritmo_parte_1.png`}
+                        alt={`certificado de algoritmo de Alexandre Cordeiro folha 1`}
+                        width={1000}
+                        height={703}
+                        priority={true}
+                    />
+                    <Image className={''}
+                        src={`/images/certificado_algoritmo_parte_2.png`}
+                        alt={`certificado de algoritmo de Alexandre Cordeiro folha 2`}
+                        width={1000}
+                        height={703}
+                        priority={true}
+                    />
+                </div>
+                </motion.div>
+            </div>
+            <div
+                className={`${styles.section} ${activeIndex === 3 ? styles.active : ''}`}
+                onClick={() => handleAccordionClick(3)}
+            >
+                <h2 className={`${activeIndex === 3 ? styles.sectionTitleOpen : styles.sectionTitle}`}>
+                    <span className={styles.adorno}>
+                        {!tag3 ? '' : tag3.ct === '/' ? `<${tag3.ot}` : `<${tag3.ot}>`}
+                    </span>
+                        Certificado
+                    <span className={styles.adorno}>
+                        {!tag3 ? '' : tag3.ct === '/' ? `${tag3.ct}>` : `<${tag3.ct}>`}
+                    </span>
+                </h2>
+                <motion.div          
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: activeIndex === 3 ? 1 : 0, height: activeIndex === 3 ? "auto" : 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                <div className={styles.sectionContent}>
+                    <Image className={''}
                         src={`/images/php_certification.png`}
                         alt={`certificado de PHP de Alexandre Cordeiro folha 1`}
+                        width={1000}
+                        height={703}
+                        priority={true}
+                    />
+                </div>
+                </motion.div>
+            </div>
+            <div
+                className={`${styles.section} ${activeIndex === 4 ? styles.active : ''}`}
+                onClick={() => handleAccordionClick(4)}
+            >
+                <h2 className={`${activeIndex === 4 ? styles.sectionTitleOpen : styles.sectionTitle}`}>
+                    <span className={styles.adorno}>
+                        {!tag4 ? '' : tag4.ct === '/' ? `<${tag4.ot}` : `<${tag4.ot}>`}
+                    </span>
+                        Certificado
+                    <span className={styles.adorno}>
+                        {!tag4 ? '' : tag4.ct === '/' ? `${tag4.ct}>` : `<${tag4.ct}>`}
+                    </span>
+                </h2>
+                <motion.div          
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: activeIndex === 4 ? 1 : 0, height: activeIndex === 4 ? "auto" : 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                <div className={styles.sectionContent}>
+                    <Image className={''}
+                        src={`/images/angular_spring.png`}
+                        alt={`certificado de angular e spring bot de Alexandre Cordeiro folha 1`}
                         width={1000}
                         height={703}
                         priority={true}
