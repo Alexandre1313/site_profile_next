@@ -246,7 +246,7 @@ const Accordion_Social = () => {
                             priority={true}
                         />
                         <Link  legacyBehavior href={''}>
-                            <a target={`_blank`}>
+                            <a className={styles.info} target={`_blank`}>
                                 Inativo
                             </a>
                         </Link>                        
