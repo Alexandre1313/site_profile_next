@@ -1,6 +1,6 @@
 .divflex {
     display: flex;
-    aling-items: center;
+    align-items: center;
     justify-content: center;    
     width: 100%;
     min-height: 100vh;
@@ -81,7 +81,7 @@
 @media only screen and (min-width: 661px) and (max-width: 1023px) {
     .divflex {
         display: flex;
-        aling-items: center;
+        align-items: center;
         justify-content: center;    
         width: 100%;        
         padding: 130px 0px 80px 0px;    
@@ -170,7 +170,7 @@
 @media screen and (max-width: 660px) {
     .divflex {
         display: flex;
-        aling-items: center;
+        align-items: center;
         justify-content: center;    
         width: 100%;        
         padding: 130px 0px 80px 0px;    
