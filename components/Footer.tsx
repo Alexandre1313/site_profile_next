@@ -111,7 +111,7 @@ export default function Footer() {
                     <SvgIconWhatsApp />
                 </div>
                 <div className={style.divallrights}>
-                    <p className={style.allrights}>&copy; 2023 - Alexandre Cordeiro - All rights reserved</p>
+                    <p className={style.allrights}>&copy; 2024 - Alexandre Cordeiro - All rights reserved</p>
                 </div>
             </div>
         </div>
