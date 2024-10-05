@@ -147,7 +147,7 @@ const Accordion_two = () => {
                         />
                         <Link legacyBehavior href={'https://api.whatsapp.com/send?phone=5547997455134'}>
                             <a className={styles.info} target={`_blank`}>
-                                &#40;47&#41; 99745-5134
+                                &#40;47&#41; 99728-5083
                             </a>
                         </Link>
                     </div>
