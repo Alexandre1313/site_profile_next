@@ -56,6 +56,24 @@ const Accordion = () => {
         }
     }, []);
 
+    const [tag5, setTag5] = useState<tag | null>(null);
+
+    useEffect(() => {
+        // Verifica se o código está rodando no lado do cliente
+        if (typeof window !== 'undefined') {
+            setTag5(tagRandon());
+        }
+    }, []);
+
+    const [tag6, setTag6] = useState<tag | null>(null);
+
+    useEffect(() => {
+        // Verifica se o código está rodando no lado do cliente
+        if (typeof window !== 'undefined') {
+            setTag6(tagRandon());
+        }
+    }, []);
+
     return (
         <div className={styles.accordion}>
             <div
@@ -217,6 +235,64 @@ const Accordion = () => {
                     <Image className={''}
                         src={`/images/angular_spring.png`}
                         alt={`certificado de angular e spring bot de Alexandre Cordeiro folha 1`}
+                        width={1000}
+                        height={703}
+                        priority={true}
+                    />
+                </div>
+                </motion.div>
+            </div>
+            <div
+                className={`${styles.section} ${activeIndex === 5 ? styles.active : ''}`}
+                onClick={() => handleAccordionClick(5)}
+            >
+                <h2 className={`${activeIndex === 5 ? styles.sectionTitleOpen : styles.sectionTitle}`}>
+                    <span className={styles.adorno}>
+                        {!tag5 ? '' : tag5.ct === '/' ? `<${tag5.ot}` : `<${tag5.ot}>`}
+                    </span>
+                        Certificado
+                    <span className={styles.adorno}>
+                        {!tag5 ? '' : tag5.ct === '/' ? `${tag5.ct}>` : `<${tag5.ct}>`}
+                    </span>
+                </h2>
+                <motion.div          
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: activeIndex === 5 ? 1 : 0, height: activeIndex === 5 ? "auto" : 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                <div className={styles.sectionContent}>
+                    <Image className={''}
+                        src={`/images/certificado_coder2.png`}
+                        alt={`certificado de nextjs 2`}
+                        width={1000}
+                        height={703}
+                        priority={true}
+                    />
+                </div>
+                </motion.div>
+            </div>
+            <div
+                className={`${styles.section} ${activeIndex === 6 ? styles.active : ''}`}
+                onClick={() => handleAccordionClick(6)}
+            >
+                <h2 className={`${activeIndex === 6 ? styles.sectionTitleOpen : styles.sectionTitle}`}>
+                    <span className={styles.adorno}>
+                        {!tag6 ? '' : tag6.ct === '/' ? `<${tag6.ot}` : `<${tag6.ot}>`}
+                    </span>
+                        Certificado
+                    <span className={styles.adorno}>
+                        {!tag6 ? '' : tag6.ct === '/' ? `${tag6.ct}>` : `<${tag6.ct}>`}
+                    </span>
+                </h2>
+                <motion.div          
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: activeIndex === 6 ? 1 : 0, height: activeIndex === 6 ? "auto" : 0 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                <div className={styles.sectionContent}>
+                    <Image className={''}
+                        src={`/images/certificado_coder1.png`}
+                        alt={`certificado de nextjs coder 1`}
                         width={1000}
                         height={703}
                         priority={true}
