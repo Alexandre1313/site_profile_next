@@ -68,14 +68,14 @@
 
 .adorno {
     color:#fb923c;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     padding: 0px 5px 0px 5px
 }
 
 .adorno:hover {
     color: #15803d;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -98,7 +98,7 @@
 
 .info {
   padding-top: 15px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   color: #94a1b2;
