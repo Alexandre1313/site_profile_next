@@ -448,7 +448,7 @@ export default function Blog_desbravando_o_prompt_de_comando_do_windows() {
                     divOneContent={arrayDivImage}
                     divTwoContent={arraydivText}
                 />
-            </PostGrid>            
+            </PostGrid >            
         </>
     )
 }
