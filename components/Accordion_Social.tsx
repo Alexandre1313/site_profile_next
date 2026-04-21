@@ -3,7 +3,7 @@ import styles from "../src/styles/accordion_social.module.css"
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import tagRandon, { tag } from "../src/utils/tagRandon"
+import tagRandon, { type tag } from "../src/utils/tagRandon"
 
 const tag = tagRandon()
 

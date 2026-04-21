@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from "../src/styles/accordion.module.css"
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import tagRandon, {tag} from '@/utils/tagRandon';
+import tagRandon, { type tag } from "../src/utils/tagRandon";
 
 const Accordion = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
