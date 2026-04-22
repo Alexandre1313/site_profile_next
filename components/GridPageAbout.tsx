@@ -2,9 +2,27 @@ import Image from "next/image"
 import style from "../src/styles/gridPageAbout.module.css"
 import Accordion from "./Accordion"
 import { useEffect, useState } from "react";
-import tagRandon, {tag} from "@/utils/tagRandon";
+import tagRandon, { tag } from "@/utils/tagRandon";
 
 const GridPageAbout = () => {
+
+    function calcularIdadePorData(dataNascimento: string) {
+        const hoje = new Date();
+        const nascimento = new Date(dataNascimento);
+
+        let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+        const fezAniversarioEsteAno =
+            hoje.getMonth() > nascimento.getMonth() ||
+            (hoje.getMonth() === nascimento.getMonth() &&
+                hoje.getDate() >= nascimento.getDate());
+
+        if (!fezAniversarioEsteAno) {
+            idade--;
+        }
+
+        return idade;
+    }
 
     const [tag0, setTag0] = useState<tag | null>(null);
 
@@ -23,7 +41,7 @@ const GridPageAbout = () => {
             setTag11(tagRandon());
         }
     }, []);
-    
+
     return (
         <div className={style.divflex}>
             <div className={style.gridMaster}>
@@ -53,21 +71,21 @@ const GridPageAbout = () => {
                 <div className={style.thirdGrid}>
                     <h1 className={style.title1}>
                         <span className={style.adorno}>
-                            {!tag0 ? '' : tag0.ct === '/' ? `<${tag0.ot}` : `<${tag0.ot}>`} 
+                            {!tag0 ? '' : tag0.ct === '/' ? `<${tag0.ot}` : `<${tag0.ot}>`}
                         </span>
-                         ? ? ? 
+                        ? ? ?
                         <span className={style.adorno}>
                             {!tag0 ? '' : tag0.ct === '/' ? `${tag0.ct}>` : `<${tag0.ct}>`}
                         </span>
                     </h1>
                     <p className={style.paragrafy}>
                         Olá! Meu nome é Alexandre Cordeiro e sou natural de Blumenau, uma bela cidade
-                        localizada em Santa Catarina, Brasil. Com 44 anos de idade, nasci em 1979 e tive a
+                        localizada em Santa Catarina, Brasil. Com {calcularIdadePorData('1979-04-13')} anos de idade, nasci em 1979 e tive a
                         oportunidade de crescer em meio às belezas naturais e cultura encantadora desse lugar.
                     </p>
                     <p className={style.paragrafy}>
                         Sou filho de Eva de Lourdes Policarpo e tenho a alegria de ser pai de três filhos
-                        maravilhosos: uma moça de 16 anos e dois rapazes com 18 e 23 anos, respectivamente.
+                        maravilhosos: uma moça de {calcularIdadePorData('2007-10-08')} anos e dois rapazes com {calcularIdadePorData('2005-02-08')} e {calcularIdadePorData('2000-10-05')} anos, respectivamente.
                         Minha família é uma parte fundamental da minha vida e me inspira a buscar sempre o
                         melhor em todas as minhas realizações.
                     </p>
@@ -112,7 +130,7 @@ const GridPageAbout = () => {
                     </p>
                 </div>
                 <div className={style.thirdGrid2}>
-                <h2 className={style.title1}>
+                    <h2 className={style.title1}>
                         <span className={style.adorno}>
                             {!tag11 ? '' : tag11.ct === '/' ? `<${tag11.ot}` : `<${tag11.ot}>`}
                         </span>
